@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hmwk.css">
+</head>
+<body>
+    <div class="boxOuter">
+        <div class="header">
+            <div><img src="./images/3.jpg" alt="1"></div>
+            <div class="bigGlrer"><a href="#">首页</a></div>
+            <div class="bigGlrer"><a href="#">榜单</a></div>
+            <div class="bigGlrer"><a href="#">歌手</a></div>
+            <div class="bigGlrer"><a href="#">下载酷我客户端</a></div>
+            <div class="stars bigGlrer"></div>
+            <div class="smallGrey">美女秀</div>
+            <div class="stars bigGlrer"></div>
+            <div class="smallGrey">酷我耳机</div>
+            <div class="stars bigGlrer"></div>
+            <div class="smallGrey">VIP会员</div>
+            <div class="stars bigGlrer"></div>
+            <div class="smallGrey">听</div>
+            <div class="bigGlrer latest">
+                <div>
+                    <a href="#">更多服务</a>
+                </div>
+                <div>
+                    <a href="#">登录</a>
+                </div>
+            </div>
+            <div class="searchMusic">
+                <form action="">
+                    <input type="search" list="names" name="music" placeholder="找到好音乐" style="opacity: 0.1;width: 120px;margin-left: 10px;">
+                    <datalist id="names">
+                        <option>茫</option>
+                        <option>起风了</option>
+                        <option>大鱼</option>
+                        <option>mojito</option>
+                    </datalist>                    
+                </form>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="captions">
+                <div class="topCaption">
+                    <div class="fontCaption">
+                        <p>喜羊羊</p>
+                        <div class="smallFont">
+                            专辑：<span>儿童大全&nbsp;&nbsp;&nbsp;</span>歌手：<span>华语群星&nbsp;&nbsp;&nbsp;</span> 分享 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评论</span>
+                            <br>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;上传时间：2015/10/2&nbsp;&nbsp;歌曲来源：网络
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomCaption">
+                    <p>在所有天气 拥有叫人大笑的力量</p>
+                    <p>虽然我只是羊</p>
+                    <p>虽然我只是羊</p>
+                    <p>喜羊羊 美羊羊 懒羊羊 沸羊羊</p>
+                    <p>慢羊羊 软绵绵 红太郎 灰太狼</p>
+                </div>
+            </div>
+            <div class="musicPlayer">
+                <audio autoplay="autoplay" id="mymusic">
+                    <source src="./images/2.mp3" type="audio/mp3">
+                </audio>
+                <div class="picture" id="picture">
+                    <img src="./images/1.jpg" alt="">
+                </div>
+                <div id="player"></div>
+                <div class="outerBox" id="outerBox">
+                    <div class="dot" id="dot"></div>
+                    <div class="innerBox" id="innerBox"></div>
+                </div>
+                <div class="showTime" id="showTime">00:00</div>
+                <div class="mutedBtn" id="mutedBtn"></div>
+                <div class="downloadBtn" id="downloadBtn">
+                    <div class="downloadImg"></div>
+                    <span>免费下载这首歌</span>
+                </div>
+            </div>
+        </div>
+        <div class="talkCaption">
+            <div class="talkOuter">
+                <div class="formtalk">
+                    <div class="title">评论 <span> 0条评论</span></div>
+                    <img src="./images/7.jpg" alt="" id="imgURl">
+                    <textarea name="name" id="talkPot" cols="30" rows="10" placeholder="分享你的音乐见解"></textarea>
+                    <button class="subBtn" id="subBtn" name="s1">评论</button>
+                    <span id="valueLength">已输入 0 字</span>
+                </div>
+                <div class="bottomtalk">
+                    <div class="title">精彩评论</div>
+                    <div class="historyTalk" id="historyTalk"></div>
+                    <div class="pages">
+                        <div><</div>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>……</div>
+                        <div>14</div>
+                        <div>15</div>
+                        <div>></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="hwek.js"></script>
+</html>
